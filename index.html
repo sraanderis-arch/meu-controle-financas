@@ -41,6 +41,12 @@ body{background:#f6f7f8}aside{background:#272c33;padding:28px 14px;width:228px;b
 #overviewTab .matrix tbody td.empty-value{color:#b8b3c5}
 #overviewTab .matrix tbody td{font-variant-numeric:tabular-nums}
 @media(max-width:800px){#overviewTab>.card{padding:13px}#overviewTab .planning-heading{align-items:flex-start}#overviewTab .planning-toolbar{width:100%}#overviewTab .matrix thead .name,#overviewTab .matrix tbody .name{min-width:165px;max-width:190px}#overviewTab .matrix th,#overviewTab .matrix td{padding:10px 11px;min-width:76px}}
+
+/* v5: compact section separators; no oversized empty band */
+#overviewTab .matrix tbody tr.section td{height:26px!important;min-height:0!important;padding:5px 10px!important;border-top:4px solid #fff!important;border-bottom:0!important;line-height:16px!important;font-size:11px!important;letter-spacing:.45px!important}
+#overviewTab .matrix tbody tr.section td:not(.name){font-size:0!important}
+#overviewTab .matrix tbody tr.section.expense-section td{background:#fff4f7!important}
+#overviewTab .matrix tbody tr.section.receipt-section td{background:#eef9f3!important}
 </style></head><body>
 <section id="auth" class="card auth"><h2>MEU CONTROLE | FINANÇAS 💜</h2><p>Meu controle, minhas regras.</p><p class="muted">Entre com seu Google para consultar suas contas e projeções.</p><div id="authMessage" class="message hidden"></div><button id="login">Entrar com Google</button></section>
 <div id="app" class="hidden"><aside><div class="logo">MEU CONTROLE<br>| FINANÇAS<small>Meu controle, minhas regras 💜</small></div><nav><button class="active" data-tab="dashboard">◫ &nbsp; Visão Geral</button><button data-tab="overview">▦ &nbsp; Planejamento Mensal</button><button data-tab="entries">＋ &nbsp; Lançamentos</button><button data-tab="cards">▤ &nbsp; Meus Cartões</button></nav><button id="logout" class="light">Sair</button></aside>
