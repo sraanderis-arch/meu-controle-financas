@@ -106,9 +106,50 @@ nav button.active,nav button:hover{background:#5d4a92}
 #overviewTab .matrix thead .name{background:#f8f8fb}
 @media(max-width:800px){#overviewTab>.card{padding:14px}#overviewTab .matrix .name{min-width:165px}}
 </style>
+<style>
+/* V8 — identidade visual final do Planejamento Mensal */
+:root{font-family:Inter,'Segoe UI',Arial,sans-serif}
+body{background:#f3f4f9!important;color:#24283a!important}
+aside{background:#20232d!important;box-shadow:5px 0 28px #15162514!important}
+aside .logo{font-size:17px!important;letter-spacing:.2px!important}
+nav button{color:#d3d3e1!important;font-size:13px!important}
+nav button.active{background:#40395d!important;box-shadow:inset 3px 0 #bba9ff!important;color:#fff!important}
+.shell{padding:27px 32px!important}
+.top h1{color:#24263a;font-weight:800!important}
+#overviewTab>.card{padding:28px 27px 30px!important;border:1px solid #ececf4!important;border-radius:24px!important;box-shadow:0 14px 38px #34335e12!important}
+#overviewTab .planning-heading{gap:15px!important}
+#overviewTab .planning-heading-icon{width:48px!important;height:48px!important;border-radius:14px!important;background:#eae4ff!important;color:#6946df!important;font-size:25px!important;box-shadow:inset 0 0 0 1px #ded5ff}
+#overviewTab .planning-heading h2{font-size:23px!important;letter-spacing:-.7px!important;color:#232439!important;font-weight:800!important}
+#overviewTab .planning-subtitle{font-size:12px!important;color:#89889d!important;margin-top:5px!important}
+#overviewTab .planning-toolbar label{font-size:11px!important;color:#535269!important;font-weight:750!important}
+#overviewTab .planning-toolbar select,#overviewTab .planning-toolbar input{padding:11px 12px!important;border:1px solid #e5e1f2!important;border-radius:10px!important;background:#faf9fe!important;box-shadow:0 1px 2px #28203e0a!important}
+#overviewTab #csv{background:#6544d7!important;box-shadow:0 4px 12px #6544d72a!important;font-size:12px!important;font-weight:800!important}
+#overviewTab .grid-scroll{border:1px solid #eeecf5!important;border-radius:14px!important;box-shadow:0 2px 8px #29203908!important;background:#fff!important;margin-top:19px!important}
+#overviewTab .matrix{font-size:12px!important;border-collapse:separate!important;border-spacing:0!important}
+#overviewTab .matrix th,#overviewTab .matrix td{padding:13px 15px!important;height:45px!important;min-width:90px!important;border-bottom:1px solid #f0eef6!important;border-right:1px solid #f3f1f8!important;color:#384052}
+#overviewTab .matrix thead th{height:60px!important;background:#f5f4fa!important;color:#3d3a56!important;font-size:11px!important;font-weight:850!important}
+#overviewTab .matrix thead .name{background:#f5f4fa!important;color:#3c3755!important;font-weight:850!important;min-width:260px!important;max-width:300px!important;box-shadow:5px 0 9px -9px #35254e44!important}
+#overviewTab .matrix .month-year{font-size:10px!important;color:#9a96ad!important;margin-top:4px!important}
+#overviewTab .matrix tbody .name{min-width:260px!important;max-width:300px!important;color:#333447!important;font-weight:600!important;background:#fff!important;box-shadow:5px 0 9px -9px #35254e44!important}
+#overviewTab .matrix tbody tr.section td.section-label{background:#eae4fc!important;color:#5a38c8!important;border-top:11px solid #fff!important;border-bottom:1px solid #e4dafd!important;padding:12px 17px!important;height:53px!important;font-size:14px!important;font-weight:850!important;letter-spacing:.1px!important;position:sticky!important;left:0!important;z-index:3!important}
+#overviewTab .matrix tbody tr.section .section-symbol{display:inline-grid!important;place-items:center!important;width:25px!important;height:25px!important;margin-right:11px!important;border-radius:7px!important;background:#d9cdfc!important;color:#5f3fce!important;font-size:17px!important;vertical-align:middle!important}
+#overviewTab .matrix tbody tr:not(.section):not(.total):not(.income):not(.balance):nth-child(even) td{background:#fcfbff!important}
+#overviewTab .matrix tbody tr:not(.section):not(.total):not(.income):not(.balance):nth-child(even) .name{background:#fcfbff!important}
+#overviewTab .matrix tbody tr.total td,#overviewTab .matrix tbody tr.income td{background:#f0ecfb!important;color:#40355f!important;font-weight:800!important;height:47px!important;border-top:1px solid #e7dff7!important;border-bottom:1px solid #e7dff7!important}
+#overviewTab .matrix tbody tr.total .name,#overviewTab .matrix tbody tr.income .name{background:#f0ecfb!important;color:#4e3a86!important;font-weight:850!important}
+#overviewTab .matrix tbody tr.balance td{height:47px!important;border-top:11px solid #fff!important;background:#f0ecfb!important;color:#6e7583!important;font-weight:800!important}
+#overviewTab .matrix tbody tr.balance .name{background:#eae4fc!important;color:#5936c7!important;font-size:12px!important;font-weight:850!important}
+#overviewTab .matrix tbody tr.balance .name:before{content:'▥';display:inline-block;color:#5e3ed2;margin-right:10px;font-size:15px}
+#overviewTab .matrix tbody tr.balance td.positive{background:#f0ecfb!important;color:#14815b!important}
+#overviewTab .matrix tbody tr.balance td.negative{background:#f0ecfb!important;color:#c23757!important}
+#overviewTab .matrix tbody tr.balance td.neutral{background:#f0ecfb!important;color:#7c8090!important}
+#overviewTab .matrix tbody td.empty-value{color:#b7b5c7!important;font-weight:400!important}
+#overviewTab .planning-empty{background:#f5f2ff!important;color:#66548d!important;border:1px solid #eae3ff!important}
+@media(max-width:800px){.shell{padding:15px!important}#overviewTab>.card{padding:15px!important}#overviewTab .matrix thead .name,#overviewTab .matrix tbody .name{min-width:170px!important;max-width:190px!important}}
+</style>
 </head><body>
-<section id="auth" class="card auth"><h2>MEU CONTROLE | FINANÇAS | </h2><p>Meu Controle, Minhas Regras</p><p class="muted">Entre com seu Google para consultar suas contas e projeções.</p><div id="authMessage" class="message hidden"></div><button id="login">Entrar com Google</button></section>
-<div id="app" class="hidden"><aside><div class="logo">MEU CONTROLE<br>| FINANÇAS |<small>Meu Controle, Minhas Regras</small></div><nav><button class="active" data-tab="dashboard">◫ &nbsp; Visão Geral</button><button data-tab="overview">▦ &nbsp; Planejamento Mensal</button><button data-tab="entries">＋ &nbsp; Lançamentos</button><button data-tab="cards">▤ &nbsp; Meus Cartões</button></nav><button id="logout" class="light">Sair</button></aside>
+<section id="auth" class="card auth"><h2>MEU CONTROLE | FINANÇAS 💜</h2><p>Meu controle, minhas regras.</p><p class="muted">Entre com seu Google para consultar suas contas e projeções.</p><div id="authMessage" class="message hidden"></div><button id="login">Entrar com Google</button></section>
+<div id="app" class="hidden"><aside><div class="logo">MEU CONTROLE<br>| FINANÇAS<small>Meu controle, minhas regras 💜</small></div><nav><button class="active" data-tab="dashboard">◫ &nbsp; Visão Geral</button><button data-tab="overview">▦ &nbsp; Planejamento Mensal</button><button data-tab="entries">＋ &nbsp; Lançamentos</button><button data-tab="cards">▤ &nbsp; Meus Cartões</button></nav><button id="logout" class="light">Sair</button></aside>
 <main class="shell"><div class="top"><div><h1 id="pageTitle">Visão Geral</h1><p id="pageSubtitle">Um jeito mais leve de acompanhar seu dinheiro.</p></div><div class="toolbar"><button class="light" id="reload">↻ Atualizar</button><button id="newEntry">＋ Novo lançamento</button></div></div>
 <div id="globalMessage" class="message hidden" role="status"></div>
 <section id="dashboardTab">
